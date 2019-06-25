@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        int count=0;
+        String token[]=s.split("[ '.,?!]+");//spilt the string when any of these come
+        for(String ss:token)
+        count++;
+        if(s.trim().equals(""))
+        System.out.println('0');
+        else
+        System.out.println(count);
+        for(String ss:token)
+        {
+            System.out.println(ss);
+
+        }
+        // Write your code here.
+        scan.close();
+    }
+}
+
