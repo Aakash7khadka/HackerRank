@@ -7,7 +7,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
         int count=0;
-        String token[]=s.split("[ '.,?!]+");//spilt the string when any of these come
+        String token[]=s.trim().split("[ '.,?!]+");//spilt the string when any of these come
         for(String ss:token)
         count++;
         if(s.trim().equals(""))
