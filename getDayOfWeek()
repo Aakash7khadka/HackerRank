@@ -1,0 +1,8 @@
+import java.util.Scanner;
+import java.time.LocalDate;
+public class hack{
+	public static void main(String[] args) {
+	LocalDate dt=LocalDate.of(2019,7,29);
+	System.out.println(dt.getDayOfWeek().toString());
+	}
+}
